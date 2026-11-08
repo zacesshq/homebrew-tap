@@ -1,32 +1,32 @@
-# Homebrew formula for Zacess Scenes 1.0.0, for Formula/zacess-scenes.rb in the zacesshq/homebrew-tap
+# Homebrew formula for Zacess Scenes 1.1.0, for Formula/zacess-scenes.rb in the zacesshq/homebrew-tap
 # repository. Each SHA256_ placeholder is the sum from the matching .sha256 file attached to the
-# v1.0.0 release; packaging/fill-checksums.sh fills them in. The next release changes the version
+# v1.1.0 release; packaging/fill-checksums.sh fills them in. The next release changes the version
 # in the four URLs and the four sums.
 class ZacessScenes < Formula
   desc "Calm animated scenes for the terminal in the ten Zacess accessible themes"
   homepage "https://zacess.com"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/zacesshq/scenes/releases/download/v1.0.0/zacess-scenes-v1.0.0-aarch64-apple-darwin.tar.gz"
-      sha256 "6e0de1599f813b994df9fc75fa2f7cbde5c0f1c410f76b22899568441e75d834"
+      url "https://github.com/zacesshq/scenes/releases/download/v1.1.0/zacess-scenes-v1.1.0-aarch64-apple-darwin.tar.gz"
+      sha256 "19cd01a935a0161293983a1d315b5b8764a9c889b1a1d11085772508db537cf0"
     end
     on_intel do
-      url "https://github.com/zacesshq/scenes/releases/download/v1.0.0/zacess-scenes-v1.0.0-x86_64-apple-darwin.tar.gz"
-      sha256 "00840a194d132a98c8c3bcea071438c9fba376d2b24f8065a6bae338f767ac20"
+      url "https://github.com/zacesshq/scenes/releases/download/v1.1.0/zacess-scenes-v1.1.0-x86_64-apple-darwin.tar.gz"
+      sha256 "b9a2ee6ad8bf96d68d13eeb926bbde2142bd73eeb0c0aec83097f9d9f98c3154"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/zacesshq/scenes/releases/download/v1.0.0/zacess-scenes-v1.0.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "bf87ef102677026ae2c55bb514b8f2d927ff5b90d6fab526e03a512f20ec605d"
+      url "https://github.com/zacesshq/scenes/releases/download/v1.1.0/zacess-scenes-v1.1.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "01d3f87182a8e46590623bec35a2dc10c473ac73ac804cba13cad7ba5f983ce0"
     end
     on_intel do
-      url "https://github.com/zacesshq/scenes/releases/download/v1.0.0/zacess-scenes-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "b97424c384a11397bbcc81e01842bde354ea6086cc48510e510678b3dcc1172f"
+      url "https://github.com/zacesshq/scenes/releases/download/v1.1.0/zacess-scenes-v1.1.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "ac335e5843d501a4d1678953cfaae8b8b5ace9d2d9e7a0958a320a8acdc3a5e6"
     end
   end
 
