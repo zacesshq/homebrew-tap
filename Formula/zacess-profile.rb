@@ -1,32 +1,32 @@
-# Homebrew formula for Zacess Profile 0.2.2, for Formula/zacess-profile.rb in the zacesshq/homebrew-tap
+# Homebrew formula for Zacess Profile 1.0.0, for Formula/zacess-profile.rb in the zacesshq/homebrew-tap
 # repository. Each SHA256_ placeholder is the sum from the matching .sha256 file attached to the
-# v0.2.2 release; packaging/fill-checksums.sh fills them in. The next release changes the version
+# v1.0.0 release; packaging/fill-checksums.sh fills them in. The next release changes the version
 # in the four URLs and the four sums.
 class ZacessProfile < Formula
   desc "One accessibility profile for every app, checked for contrast and colour vision"
   homepage "https://zacess.com"
-  version "0.2.2"
+  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/zacesshq/profile/releases/download/v0.2.2/zacess-profile-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "79f8515a3a4318acf493b3ce9b6ec1b251eada893a574129ddac45dc29f31a0b"
+      url "https://github.com/zacesshq/profile/releases/download/v1.0.0/zacess-profile-v1.0.0-aarch64-apple-darwin.tar.gz"
+      sha256 "436c95da9f0b0812dea02a6db514b12d523b919dbf91b133afbf9a14f2a13ef4"
     end
     on_intel do
-      url "https://github.com/zacesshq/profile/releases/download/v0.2.2/zacess-profile-v0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "8e6ab33eeee10d538b7e454232acb963ef20f27b1a46a07d07f750aaee239694"
+      url "https://github.com/zacesshq/profile/releases/download/v1.0.0/zacess-profile-v1.0.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ad179b9416ee49f57aea2fac746fd035a2c5dfc567d336404e862f0ecfd45a67"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/zacesshq/profile/releases/download/v0.2.2/zacess-profile-v0.2.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "fa93d038731bd99c368c850fa7003266f99646dae027e7fbbb1273f9f11d050e"
+      url "https://github.com/zacesshq/profile/releases/download/v1.0.0/zacess-profile-v1.0.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "d3d9dd8560ba1c3f64e1108188b4a47478291626857d5c367d2b69310692a1a3"
     end
     on_intel do
-      url "https://github.com/zacesshq/profile/releases/download/v0.2.2/zacess-profile-v0.2.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "987506c778bd8ea70e3da7e69b21b6ad521d595ba3a6ce339428614f590d7beb"
+      url "https://github.com/zacesshq/profile/releases/download/v1.0.0/zacess-profile-v1.0.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "23a9748e49c58483fa99b9dc7d7d105694a11cd4fb0bb09d9b6f5e583e49ed89"
     end
   end
 
@@ -38,7 +38,7 @@ class ZacessProfile < Formula
 
   def caveats
     <<~EOS
-      The eight starter profiles are in:
+      The ten starter profiles are in:
         #{opt_pkgshare}/profiles
     EOS
   end
